@@ -1,0 +1,140 @@
+/* ------------------------------------------- */
+/* University of Miami Commuter Students CSS  */
+/* ------------------------------------------- */
+
+/* Color Palette:
+   - Green: #005030 (Primary)
+   - Orange: #F47321 (Accent)
+   - White: #FFFFFF
+   - Light Gray: #f8f8f8 (Background)
+*/
+
+/* GLOBAL STYLES */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* HEADER AND NAVIGATION */
+header {
+    background-color: #005030; /* Miami Green */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #F47321; /* Miami Orange */
+}
+
+/* MAIN CONTENT SECTIONS */
+section {
+    padding: 30px;
+    margin: 30px auto;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #F47321; /* Miami Orange underline */
+    padding-bottom: 10px;
+    color: #005030; /* Miami Green */
+    margin-top: 0;
+}
+
+/* ARTICLE STYLES */
+article {
+    margin-bottom: 25px;
+}
+
+article h3 {
+    font-size: 1.5em;
+    color: #F47321; /* Miami Orange */
+    margin-top: 0;
+}
+
+article ul {
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+/* LINKS */
+a {
+    color: #F47321; /* Miami Orange for all links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #005030; /* Miami Green on hover */
+}
+
+/* FOOTER */
+footer {
+    background-color: #005030; /* Miami Green */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 5px solid #F47321; /* Miami Orange border */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+    section {
+        padding: 20px;
+    }
+}
